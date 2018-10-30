@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A6E7407188EF31A000D650F /* AppleEffaceableStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73E4188EF31A000D650F /* AppleEffaceableStorage.c */; };
+		8A6E7408188EF31A000D650F /* AppleKeyStore_kdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73E6188EF31A000D650F /* AppleKeyStore_kdf.c */; };
+		8A6E7409188EF31A000D650F /* AppleKeyStore.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73E7188EF31A000D650F /* AppleKeyStore.c */; };
+		8A6E740A188EF31A000D650F /* key_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73EA188EF31A000D650F /* key_wrap.c */; };
+		8A6E740B188EF31A000D650F /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73EC188EF31A000D650F /* pbkdf2.c */; };
+		8A6E740C188EF31A000D650F /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73EE188EF31A000D650F /* rijndael.c */; };
+		8A6E740D188EF31A000D650F /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73F0188EF31A000D650F /* sha1.c */; };
+		8A6E740E188EF31A000D650F /* crack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73F2188EF31A000D650F /* crack.c */; };
+		8A6E740F188EF31A000D650F /* crackpin.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73F5188EF31A000D650F /* crackpin.c */; };
+		8A6E7411188EF31A000D650F /* grab_locker.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73F9188EF31A000D650F /* grab_locker.c */; };
+		8A6E7412188EF31A000D650F /* grab_system.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73FA188EF31A000D650F /* grab_system.c */; };
+		8A6E7413188EF31A000D650F /* ioaes.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73FB188EF31A000D650F /* ioaes.c */; };
+		8A6E7414188EF31A000D650F /* IOAESAccelerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E73FD188EF31A000D650F /* IOAESAccelerator.c */; };
+		8A6E7415188EF31A000D650F /* ioflash.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7400188EF31A000D650F /* ioflash.c */; };
+		8A6E7416188EF31A000D650F /* ioflash_kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7402188EF31A000D650F /* ioflash_kernel.c */; };
+		8A6E7417188EF31A000D650F /* IOKit.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7403188EF31A000D650F /* IOKit.c */; };
+		8A6E7418188EF31A000D650F /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E7405188EF31A000D650F /* registry.c */; };
+		8A6E743B188EFE0A000D650F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6E743A188EFE0A000D650F /* CoreFoundation.framework */; };
+		8A6E745E188F03BA000D650F /* device_info.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E745C188F03BA000D650F /* device_info.c */; };
+		8A6E7461188F0403000D650F /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E745F188F0402000D650F /* util.c */; };
+		8AB037D818DDEAD5001AC096 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6E743C188EFE20000D650F /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A6E73B8188EF10B000D650F /* crack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = crack; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A6E73BD188EF10B000D650F /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8A6E73BE188EF10B000D650F /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8A6E73C0188EF10B000D650F /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8A6E73C3188EF10B000D650F /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		8A6E73E4188EF31A000D650F /* AppleEffaceableStorage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AppleEffaceableStorage.c; sourceTree = "<group>"; };
+		8A6E73E5188EF31A000D650F /* AppleEffaceableStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleEffaceableStorage.h; sourceTree = "<group>"; };
+		8A6E73E6188EF31A000D650F /* AppleKeyStore_kdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AppleKeyStore_kdf.c; sourceTree = "<group>"; };
+		8A6E73E7188EF31A000D650F /* AppleKeyStore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AppleKeyStore.c; sourceTree = "<group>"; };
+		8A6E73E8188EF31A000D650F /* AppleKeyStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleKeyStore.h; sourceTree = "<group>"; };
+		8A6E73EA188EF31A000D650F /* key_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_wrap.c; sourceTree = "<group>"; };
+		8A6E73EB188EF31A000D650F /* key_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key_wrap.h; sourceTree = "<group>"; };
+		8A6E73EC188EF31A000D650F /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		8A6E73ED188EF31A000D650F /* pbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		8A6E73EE188EF31A000D650F /* rijndael.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rijndael.c; sourceTree = "<group>"; };
+		8A6E73EF188EF31A000D650F /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		8A6E73F0188EF31A000D650F /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		8A6E73F1188EF31A000D650F /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		8A6E73F2188EF31A000D650F /* crack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crack.c; sourceTree = "<group>"; };
+		8A6E73F3188EF31A000D650F /* crack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crack.h; sourceTree = "<group>"; };
+		8A6E73F4188EF31A000D650F /* com.sudo-sec.crack.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "com.sudo-sec.crack.plist"; sourceTree = "<group>"; };
+		8A6E73F5188EF31A000D650F /* crackpin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crackpin.c; sourceTree = "<group>"; };
+		8A6E73F6188EF31A000D650F /* crackpin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crackpin.h; sourceTree = "<group>"; };
+		8A6E73F9188EF31A000D650F /* grab_locker.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grab_locker.c; sourceTree = "<group>"; };
+		8A6E73FA188EF31A000D650F /* grab_system.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = grab_system.c; sourceTree = "<group>"; };
+		8A6E73FB188EF31A000D650F /* ioaes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioaes.c; sourceTree = "<group>"; };
+		8A6E73FC188EF31A000D650F /* ioaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioaes.h; sourceTree = "<group>"; };
+		8A6E73FD188EF31A000D650F /* IOAESAccelerator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOAESAccelerator.c; sourceTree = "<group>"; };
+		8A6E73FE188EF31A000D650F /* IOAESAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOAESAccelerator.h; sourceTree = "<group>"; };
+		8A6E7400188EF31A000D650F /* ioflash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioflash.c; sourceTree = "<group>"; };
+		8A6E7401188EF31A000D650F /* ioflash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioflash.h; sourceTree = "<group>"; };
+		8A6E7402188EF31A000D650F /* ioflash_kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioflash_kernel.c; sourceTree = "<group>"; };
+		8A6E7403188EF31A000D650F /* IOKit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOKit.c; sourceTree = "<group>"; };
+		8A6E7404188EF31A000D650F /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKit.h; sourceTree = "<group>"; };
+		8A6E7405188EF31A000D650F /* registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = registry.c; sourceTree = "<group>"; };
+		8A6E7406188EF31A000D650F /* registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registry.h; sourceTree = "<group>"; };
+		8A6E743A188EFE0A000D650F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8A6E743C188EFE20000D650F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		8A6E745C188F03BA000D650F /* device_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device_info.c; sourceTree = "<group>"; };
+		8A6E745D188F03BA000D650F /* device_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_info.h; sourceTree = "<group>"; };
+		8A6E745F188F0402000D650F /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		8A6E7460188F0402000D650F /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A6E73B5188EF10B000D650F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB037D818DDEAD5001AC096 /* IOKit.framework in Frameworks */,
+				8A6E743B188EFE0A000D650F /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A6E73AF188EF10B000D650F = {
+			isa = PBXGroup;
+			children = (
+				8A6E73BA188EF10B000D650F /* crack */,
+				8A6E73B9188EF10B000D650F /* Products */,
+				8A6E743E188EFE49000D650F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A6E73B9188EF10B000D650F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73B8188EF10B000D650F /* crack */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A6E73BA188EF10B000D650F /* crack */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7462188F0410000D650F /* misc */,
+				8A6E742B188EF3E3000D650F /* info */,
+				8A6E742A188EF3A5000D650F /* kapi */,
+				8A6E742C188EF40A000D650F /* crypt */,
+				8A6E73F2188EF31A000D650F /* crack.c */,
+				8A6E73F3188EF31A000D650F /* crack.h */,
+				8A6E73BB188EF10B000D650F /* Package */,
+				8A6E73BF188EF10B000D650F /* Supporting Files */,
+			);
+			path = crack;
+			sourceTree = "<group>";
+		};
+		8A6E73BB188EF10B000D650F /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73BC188EF10B000D650F /* DEBIAN */,
+				8A6E73C1188EF10B000D650F /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8A6E73BC188EF10B000D650F /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73BD188EF10B000D650F /* control.txt */,
+				8A6E73BE188EF10B000D650F /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8A6E73BF188EF10B000D650F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73C0188EF10B000D650F /* PackageVersion.plist */,
+				8A6E73F4188EF31A000D650F /* com.sudo-sec.crack.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A6E73C1188EF10B000D650F /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73C2188EF10B000D650F /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		8A6E73C2188EF10B000D650F /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73C3188EF10B000D650F /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		8A6E73E9188EF31A000D650F /* bsdcrypto */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73EA188EF31A000D650F /* key_wrap.c */,
+				8A6E73EB188EF31A000D650F /* key_wrap.h */,
+				8A6E73EC188EF31A000D650F /* pbkdf2.c */,
+				8A6E73ED188EF31A000D650F /* pbkdf2.h */,
+				8A6E73EE188EF31A000D650F /* rijndael.c */,
+				8A6E73EF188EF31A000D650F /* rijndael.h */,
+				8A6E73F0188EF31A000D650F /* sha1.c */,
+				8A6E73F1188EF31A000D650F /* sha1.h */,
+			);
+			path = bsdcrypto;
+			sourceTree = "<group>";
+		};
+		8A6E73FF188EF31A000D650F /* ioflash */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7400188EF31A000D650F /* ioflash.c */,
+				8A6E7401188EF31A000D650F /* ioflash.h */,
+				8A6E7402188EF31A000D650F /* ioflash_kernel.c */,
+			);
+			path = ioflash;
+			sourceTree = "<group>";
+		};
+		8A6E742A188EF3A5000D650F /* kapi */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E7403188EF31A000D650F /* IOKit.c */,
+				8A6E7404188EF31A000D650F /* IOKit.h */,
+				8A6E73FD188EF31A000D650F /* IOAESAccelerator.c */,
+				8A6E73FE188EF31A000D650F /* IOAESAccelerator.h */,
+				8A6E73E4188EF31A000D650F /* AppleEffaceableStorage.c */,
+				8A6E73E5188EF31A000D650F /* AppleEffaceableStorage.h */,
+				8A6E73E6188EF31A000D650F /* AppleKeyStore_kdf.c */,
+				8A6E73E7188EF31A000D650F /* AppleKeyStore.c */,
+				8A6E73E8188EF31A000D650F /* AppleKeyStore.h */,
+			);
+			name = kapi;
+			sourceTree = "<group>";
+		};
+		8A6E742B188EF3E3000D650F /* info */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E745C188F03BA000D650F /* device_info.c */,
+				8A6E745D188F03BA000D650F /* device_info.h */,
+				8A6E73F9188EF31A000D650F /* grab_locker.c */,
+				8A6E73FA188EF31A000D650F /* grab_system.c */,
+				8A6E7405188EF31A000D650F /* registry.c */,
+				8A6E7406188EF31A000D650F /* registry.h */,
+				8A6E73FF188EF31A000D650F /* ioflash */,
+			);
+			name = info;
+			sourceTree = "<group>";
+		};
+		8A6E742C188EF40A000D650F /* crypt */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E73F5188EF31A000D650F /* crackpin.c */,
+				8A6E73F6188EF31A000D650F /* crackpin.h */,
+				8A6E73FB188EF31A000D650F /* ioaes.c */,
+				8A6E73FC188EF31A000D650F /* ioaes.h */,
+				8A6E73E9188EF31A000D650F /* bsdcrypto */,
+			);
+			name = crypt;
+			sourceTree = "<group>";
+		};
+		8A6E743E188EFE49000D650F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E743C188EFE20000D650F /* IOKit.framework */,
+				8A6E743A188EFE0A000D650F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A6E7462188F0410000D650F /* misc */ = {
+			isa = PBXGroup;
+			children = (
+				8A6E745F188F0402000D650F /* util.c */,
+				8A6E7460188F0402000D650F /* util.h */,
+			);
+			name = misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A6E73B7188EF10B000D650F /* crack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A6E73C8188EF10B000D650F /* Build configuration list for PBXNativeTarget "crack" */;
+			buildPhases = (
+				8A6E73B4188EF10B000D650F /* Sources */,
+				8A6E73B5188EF10B000D650F /* Frameworks */,
+				8A6E73B6188EF10B000D650F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = crack;
+			productName = crack;
+			productReference = 8A6E73B8188EF10B000D650F /* crack */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A6E73B0188EF10B000D650F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 8A6E73B3188EF10B000D650F /* Build configuration list for PBXProject "crack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A6E73AF188EF10B000D650F;
+			productRefGroup = 8A6E73B9188EF10B000D650F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A6E73B7188EF10B000D650F /* crack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A6E73B6188EF10B000D650F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A6E73B4188EF10B000D650F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A6E7409188EF31A000D650F /* AppleKeyStore.c in Sources */,
+				8A6E740E188EF31A000D650F /* crack.c in Sources */,
+				8A6E7461188F0403000D650F /* util.c in Sources */,
+				8A6E740A188EF31A000D650F /* key_wrap.c in Sources */,
+				8A6E740B188EF31A000D650F /* pbkdf2.c in Sources */,
+				8A6E7413188EF31A000D650F /* ioaes.c in Sources */,
+				8A6E7408188EF31A000D650F /* AppleKeyStore_kdf.c in Sources */,
+				8A6E7416188EF31A000D650F /* ioflash_kernel.c in Sources */,
+				8A6E740D188EF31A000D650F /* sha1.c in Sources */,
+				8A6E740F188EF31A000D650F /* crackpin.c in Sources */,
+				8A6E7414188EF31A000D650F /* IOAESAccelerator.c in Sources */,
+				8A6E740C188EF31A000D650F /* rijndael.c in Sources */,
+				8A6E7417188EF31A000D650F /* IOKit.c in Sources */,
+				8A6E7415188EF31A000D650F /* ioflash.c in Sources */,
+				8A6E7418188EF31A000D650F /* registry.c in Sources */,
+				8A6E7411188EF31A000D650F /* grab_locker.c in Sources */,
+				8A6E745E188F03BA000D650F /* device_info.c in Sources */,
+				8A6E7412188EF31A000D650F /* grab_system.c in Sources */,
+				8A6E7407188EF31A000D650F /* AppleEffaceableStorage.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A6E73C6188EF10B000D650F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		8A6E73C7188EF10B000D650F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				MACH_O_TYPE = mh_dylib;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		8A6E73C9188EF10B000D650F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = iphone;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		8A6E73CA188EF10B000D650F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = iphone;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A6E73B3188EF10B000D650F /* Build configuration list for PBXProject "crack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6E73C6188EF10B000D650F /* Debug */,
+				8A6E73C7188EF10B000D650F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A6E73C8188EF10B000D650F /* Build configuration list for PBXNativeTarget "crack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A6E73C9188EF10B000D650F /* Debug */,
+				8A6E73CA188EF10B000D650F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A6E73B0188EF10B000D650F /* Project object */;
+}

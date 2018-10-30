@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A75E8F2197EEE6A0007FCA7 /* konsole.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E8F1197EEE6A0007FCA7 /* konsole.c */; };
+		8A75E901197EF08D0007FCA7 /* shell.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E900197EF08D0007FCA7 /* shell.c */; };
+		8A75E928197EF97E0007FCA7 /* avio.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E903197EF97E0007FCA7 /* avio.c */; };
+		8A75E929197EF97E0007FCA7 /* command.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E905197EF97E0007FCA7 /* command.c */; };
+		8A75E92A197EF97E0007FCA7 /* dangu.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E907197EF97E0007FCA7 /* dangu.c */; };
+		8A75E92B197EF97E0007FCA7 /* devtree.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E90A197EF97E0007FCA7 /* devtree.c */; };
+		8A75E92C197EF97E0007FCA7 /* earlyrandom.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E90C197EF97E0007FCA7 /* earlyrandom.c */; };
+		8A75E92D197EF97E0007FCA7 /* find.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E90E197EF97E0007FCA7 /* find.c */; };
+		8A75E92E197EF97E0007FCA7 /* kaslr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E910197EF97E0007FCA7 /* kaslr.c */; };
+		8A75E92F197EF97E0007FCA7 /* kernel.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E912197EF97E0007FCA7 /* kernel.c */; };
+		8A75E930197EF97E0007FCA7 /* m1n0rthreat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E914197EF97E0007FCA7 /* m1n0rthreat.c */; };
+		8A75E931197EF97E0007FCA7 /* macho.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E916197EF97E0007FCA7 /* macho.c */; };
+		8A75E933197EF97E0007FCA7 /* pmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E91A197EF97E0007FCA7 /* pmap.c */; };
+		8A75E934197EF97E0007FCA7 /* section.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E91C197EF97E0007FCA7 /* section.c */; };
+		8A75E935197EF97E0007FCA7 /* segment.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E91E197EF97E0007FCA7 /* segment.c */; };
+		8A75E936197EF97E0007FCA7 /* symbol.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E920197EF97E0007FCA7 /* symbol.c */; };
+		8A75E937197EF97E0007FCA7 /* symtab.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E922197EF97E0007FCA7 /* symtab.c */; };
+		8A75E938197EF97E0007FCA7 /* tfp0.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E924197EF97E0007FCA7 /* tfp0.c */; };
+		8A75E939197EF97E0007FCA7 /* vmmap.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E926197EF97E0007FCA7 /* vmmap.c */; };
+		8A75E94B197F00A80007FCA7 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75E94A197F00A80007FCA7 /* debug.c */; };
+		8A75E94D197F010B0007FCA7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A75E94C197F010B0007FCA7 /* CoreFoundation.framework */; };
+		8A75E94F197F01200007FCA7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A75E94E197F01200007FCA7 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A75E8E5197EEE6A0007FCA7 /* konsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = konsole; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A75E8EA197EEE6A0007FCA7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		8A75E8EB197EEE6A0007FCA7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		8A75E8ED197EEE6A0007FCA7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		8A75E8F0197EEE6A0007FCA7 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		8A75E8F1197EEE6A0007FCA7 /* konsole.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = konsole.c; sourceTree = "<group>"; };
+		8A75E900197EF08D0007FCA7 /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
+		8A75E902197EF09C0007FCA7 /* shell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shell.h; sourceTree = "<group>"; };
+		8A75E903197EF97E0007FCA7 /* avio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = avio.c; path = ../../patch/patch/avio.c; sourceTree = "<group>"; };
+		8A75E904197EF97E0007FCA7 /* avio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = avio.h; path = ../../patch/patch/avio.h; sourceTree = "<group>"; };
+		8A75E905197EF97E0007FCA7 /* command.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = command.c; path = ../../patch/patch/command.c; sourceTree = "<group>"; };
+		8A75E906197EF97E0007FCA7 /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = command.h; path = ../../patch/patch/command.h; sourceTree = "<group>"; };
+		8A75E907197EF97E0007FCA7 /* dangu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dangu.c; path = ../../patch/patch/dangu.c; sourceTree = "<group>"; };
+		8A75E908197EF97E0007FCA7 /* dangu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dangu.h; path = ../../patch/patch/dangu.h; sourceTree = "<group>"; };
+		8A75E909197EF97E0007FCA7 /* debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug.h; path = ../../patch/patch/debug.h; sourceTree = "<group>"; };
+		8A75E90A197EF97E0007FCA7 /* devtree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = devtree.c; path = ../../patch/patch/devtree.c; sourceTree = "<group>"; };
+		8A75E90B197EF97E0007FCA7 /* devtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devtree.h; path = ../../patch/patch/devtree.h; sourceTree = "<group>"; };
+		8A75E90C197EF97E0007FCA7 /* earlyrandom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = earlyrandom.c; path = ../../patch/patch/earlyrandom.c; sourceTree = "<group>"; };
+		8A75E90D197EF97E0007FCA7 /* earlyrandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = earlyrandom.h; path = ../../patch/patch/earlyrandom.h; sourceTree = "<group>"; };
+		8A75E90E197EF97E0007FCA7 /* find.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = find.c; path = ../../patch/patch/find.c; sourceTree = "<group>"; };
+		8A75E90F197EF97E0007FCA7 /* find.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = find.h; path = ../../patch/patch/find.h; sourceTree = "<group>"; };
+		8A75E910197EF97E0007FCA7 /* kaslr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kaslr.c; path = ../../patch/patch/kaslr.c; sourceTree = "<group>"; };
+		8A75E911197EF97E0007FCA7 /* kaslr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kaslr.h; path = ../../patch/patch/kaslr.h; sourceTree = "<group>"; };
+		8A75E912197EF97E0007FCA7 /* kernel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = kernel.c; path = ../../patch/patch/kernel.c; sourceTree = "<group>"; };
+		8A75E913197EF97E0007FCA7 /* kernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kernel.h; path = ../../patch/patch/kernel.h; sourceTree = "<group>"; };
+		8A75E914197EF97E0007FCA7 /* m1n0rthreat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = m1n0rthreat.c; path = ../../patch/patch/m1n0rthreat.c; sourceTree = "<group>"; };
+		8A75E915197EF97E0007FCA7 /* m1n0rthreat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = m1n0rthreat.h; path = ../../patch/patch/m1n0rthreat.h; sourceTree = "<group>"; };
+		8A75E916197EF97E0007FCA7 /* macho.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = macho.c; path = ../../patch/patch/macho.c; sourceTree = "<group>"; };
+		8A75E917197EF97E0007FCA7 /* macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = macho.h; path = ../../patch/patch/macho.h; sourceTree = "<group>"; };
+		8A75E91A197EF97E0007FCA7 /* pmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pmap.c; path = ../../patch/patch/pmap.c; sourceTree = "<group>"; };
+		8A75E91B197EF97E0007FCA7 /* pmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pmap.h; path = ../../patch/patch/pmap.h; sourceTree = "<group>"; };
+		8A75E91C197EF97E0007FCA7 /* section.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = section.c; path = ../../patch/patch/section.c; sourceTree = "<group>"; };
+		8A75E91D197EF97E0007FCA7 /* section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = section.h; path = ../../patch/patch/section.h; sourceTree = "<group>"; };
+		8A75E91E197EF97E0007FCA7 /* segment.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = segment.c; path = ../../patch/patch/segment.c; sourceTree = "<group>"; };
+		8A75E91F197EF97E0007FCA7 /* segment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = segment.h; path = ../../patch/patch/segment.h; sourceTree = "<group>"; };
+		8A75E920197EF97E0007FCA7 /* symbol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = symbol.c; path = ../../patch/patch/symbol.c; sourceTree = "<group>"; };
+		8A75E921197EF97E0007FCA7 /* symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbol.h; path = ../../patch/patch/symbol.h; sourceTree = "<group>"; };
+		8A75E922197EF97E0007FCA7 /* symtab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = symtab.c; path = ../../patch/patch/symtab.c; sourceTree = "<group>"; };
+		8A75E923197EF97E0007FCA7 /* symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symtab.h; path = ../../patch/patch/symtab.h; sourceTree = "<group>"; };
+		8A75E924197EF97E0007FCA7 /* tfp0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tfp0.c; path = ../../patch/patch/tfp0.c; sourceTree = "<group>"; };
+		8A75E925197EF97E0007FCA7 /* tfp0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tfp0.h; path = ../../patch/patch/tfp0.h; sourceTree = "<group>"; };
+		8A75E926197EF97E0007FCA7 /* vmmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vmmap.c; path = ../../patch/patch/vmmap.c; sourceTree = "<group>"; };
+		8A75E927197EF97E0007FCA7 /* vmmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vmmap.h; path = ../../patch/patch/vmmap.h; sourceTree = "<group>"; };
+		8A75E94A197F00A80007FCA7 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		8A75E94C197F010B0007FCA7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8A75E94E197F01200007FCA7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A75E8E2197EEE6A0007FCA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A75E94F197F01200007FCA7 /* IOKit.framework in Frameworks */,
+				8A75E94D197F010B0007FCA7 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A75E8DC197EEE6A0007FCA7 = {
+			isa = PBXGroup;
+			children = (
+				8A75E94E197F01200007FCA7 /* IOKit.framework */,
+				8A75E94C197F010B0007FCA7 /* CoreFoundation.framework */,
+				8A75E8E7197EEE6A0007FCA7 /* konsole */,
+				8A75E8E6197EEE6A0007FCA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A75E8E6197EEE6A0007FCA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8E5197EEE6A0007FCA7 /* konsole */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A75E8E7197EEE6A0007FCA7 /* konsole */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E909197EF97E0007FCA7 /* debug.h */,
+				8A75E94A197F00A80007FCA7 /* debug.c */,
+				8A75E946197EFA4D0007FCA7 /* find */,
+				8A75E93C197EF9A00007FCA7 /* macho */,
+				8A75E93B197EF9950007FCA7 /* kaslr */,
+				8A75E93A197EF98E0007FCA7 /* kernel */,
+				8A75E8F1197EEE6A0007FCA7 /* konsole.c */,
+				8A75E8E8197EEE6A0007FCA7 /* Package */,
+				8A75E8EC197EEE6A0007FCA7 /* Supporting Files */,
+			);
+			path = konsole;
+			sourceTree = "<group>";
+		};
+		8A75E8E8197EEE6A0007FCA7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8E9197EEE6A0007FCA7 /* DEBIAN */,
+				8A75E8EE197EEE6A0007FCA7 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		8A75E8E9197EEE6A0007FCA7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8EA197EEE6A0007FCA7 /* control.txt */,
+				8A75E8EB197EEE6A0007FCA7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		8A75E8EC197EEE6A0007FCA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8ED197EEE6A0007FCA7 /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A75E8EE197EEE6A0007FCA7 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8EF197EEE6A0007FCA7 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		8A75E8EF197EEE6A0007FCA7 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E8F0197EEE6A0007FCA7 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		8A75E93A197EF98E0007FCA7 /* kernel */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E900197EF08D0007FCA7 /* shell.c */,
+				8A75E902197EF09C0007FCA7 /* shell.h */,
+				8A75E912197EF97E0007FCA7 /* kernel.c */,
+				8A75E913197EF97E0007FCA7 /* kernel.h */,
+				8A75E93D197EF9A60007FCA7 /* exploits */,
+			);
+			name = kernel;
+			sourceTree = "<group>";
+		};
+		8A75E93B197EF9950007FCA7 /* kaslr */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E910197EF97E0007FCA7 /* kaslr.c */,
+				8A75E911197EF97E0007FCA7 /* kaslr.h */,
+				8A75E93E197EF9AB0007FCA7 /* exploits */,
+			);
+			name = kaslr;
+			sourceTree = "<group>";
+		};
+		8A75E93C197EF9A00007FCA7 /* macho */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E905197EF97E0007FCA7 /* command.c */,
+				8A75E906197EF97E0007FCA7 /* command.h */,
+				8A75E916197EF97E0007FCA7 /* macho.c */,
+				8A75E917197EF97E0007FCA7 /* macho.h */,
+				8A75E91C197EF97E0007FCA7 /* section.c */,
+				8A75E91D197EF97E0007FCA7 /* section.h */,
+				8A75E91E197EF97E0007FCA7 /* segment.c */,
+				8A75E91F197EF97E0007FCA7 /* segment.h */,
+				8A75E920197EF97E0007FCA7 /* symbol.c */,
+				8A75E921197EF97E0007FCA7 /* symbol.h */,
+				8A75E922197EF97E0007FCA7 /* symtab.c */,
+				8A75E923197EF97E0007FCA7 /* symtab.h */,
+			);
+			name = macho;
+			sourceTree = "<group>";
+		};
+		8A75E93D197EF9A60007FCA7 /* exploits */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E947197EFA830007FCA7 /* pmap */,
+				8A75E945197EFA410007FCA7 /* tfp0 */,
+				8A75E944197EFA270007FCA7 /* m1n0rthreat */,
+				8A75E943197EFA210007FCA7 /* dangu */,
+				8A75E942197EFA1D0007FCA7 /* avio */,
+			);
+			name = exploits;
+			sourceTree = "<group>";
+		};
+		8A75E93E197EF9AB0007FCA7 /* exploits */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E941197EF9F80007FCA7 /* earlyrandom */,
+				8A75E940197EF9EF0007FCA7 /* vmmap */,
+				8A75E93F197EF9E90007FCA7 /* devtree */,
+			);
+			name = exploits;
+			sourceTree = "<group>";
+		};
+		8A75E93F197EF9E90007FCA7 /* devtree */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E90A197EF97E0007FCA7 /* devtree.c */,
+				8A75E90B197EF97E0007FCA7 /* devtree.h */,
+			);
+			name = devtree;
+			sourceTree = "<group>";
+		};
+		8A75E940197EF9EF0007FCA7 /* vmmap */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E926197EF97E0007FCA7 /* vmmap.c */,
+				8A75E927197EF97E0007FCA7 /* vmmap.h */,
+			);
+			name = vmmap;
+			sourceTree = "<group>";
+		};
+		8A75E941197EF9F80007FCA7 /* earlyrandom */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E90C197EF97E0007FCA7 /* earlyrandom.c */,
+				8A75E90D197EF97E0007FCA7 /* earlyrandom.h */,
+			);
+			name = earlyrandom;
+			sourceTree = "<group>";
+		};
+		8A75E942197EFA1D0007FCA7 /* avio */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E903197EF97E0007FCA7 /* avio.c */,
+				8A75E904197EF97E0007FCA7 /* avio.h */,
+			);
+			name = avio;
+			sourceTree = "<group>";
+		};
+		8A75E943197EFA210007FCA7 /* dangu */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E907197EF97E0007FCA7 /* dangu.c */,
+				8A75E908197EF97E0007FCA7 /* dangu.h */,
+			);
+			name = dangu;
+			sourceTree = "<group>";
+		};
+		8A75E944197EFA270007FCA7 /* m1n0rthreat */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E914197EF97E0007FCA7 /* m1n0rthreat.c */,
+				8A75E915197EF97E0007FCA7 /* m1n0rthreat.h */,
+			);
+			name = m1n0rthreat;
+			sourceTree = "<group>";
+		};
+		8A75E945197EFA410007FCA7 /* tfp0 */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E924197EF97E0007FCA7 /* tfp0.c */,
+				8A75E925197EF97E0007FCA7 /* tfp0.h */,
+			);
+			name = tfp0;
+			sourceTree = "<group>";
+		};
+		8A75E946197EFA4D0007FCA7 /* find */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E90E197EF97E0007FCA7 /* find.c */,
+				8A75E90F197EF97E0007FCA7 /* find.h */,
+			);
+			name = find;
+			sourceTree = "<group>";
+		};
+		8A75E947197EFA830007FCA7 /* pmap */ = {
+			isa = PBXGroup;
+			children = (
+				8A75E91A197EF97E0007FCA7 /* pmap.c */,
+				8A75E91B197EF97E0007FCA7 /* pmap.h */,
+			);
+			name = pmap;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A75E8E4197EEE6A0007FCA7 /* konsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A75E8F5197EEE6A0007FCA7 /* Build configuration list for PBXNativeTarget "konsole" */;
+			buildPhases = (
+				8A75E8E1197EEE6A0007FCA7 /* Sources */,
+				8A75E8E2197EEE6A0007FCA7 /* Frameworks */,
+				8A75E8E3197EEE6A0007FCA7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = konsole;
+			productName = konsole;
+			productReference = 8A75E8E5197EEE6A0007FCA7 /* konsole */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A75E8DD197EEE6A0007FCA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 8A75E8E0197EEE6A0007FCA7 /* Build configuration list for PBXProject "konsole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A75E8DC197EEE6A0007FCA7;
+			productRefGroup = 8A75E8E6197EEE6A0007FCA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A75E8E4197EEE6A0007FCA7 /* konsole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A75E8E3197EEE6A0007FCA7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A75E8E1197EEE6A0007FCA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A75E931197EF97E0007FCA7 /* macho.c in Sources */,
+				8A75E939197EF97E0007FCA7 /* vmmap.c in Sources */,
+				8A75E92F197EF97E0007FCA7 /* kernel.c in Sources */,
+				8A75E92D197EF97E0007FCA7 /* find.c in Sources */,
+				8A75E934197EF97E0007FCA7 /* section.c in Sources */,
+				8A75E92C197EF97E0007FCA7 /* earlyrandom.c in Sources */,
+				8A75E901197EF08D0007FCA7 /* shell.c in Sources */,
+				8A75E92E197EF97E0007FCA7 /* kaslr.c in Sources */,
+				8A75E92B197EF97E0007FCA7 /* devtree.c in Sources */,
+				8A75E929197EF97E0007FCA7 /* command.c in Sources */,
+				8A75E938197EF97E0007FCA7 /* tfp0.c in Sources */,
+				8A75E94B197F00A80007FCA7 /* debug.c in Sources */,
+				8A75E930197EF97E0007FCA7 /* m1n0rthreat.c in Sources */,
+				8A75E928197EF97E0007FCA7 /* avio.c in Sources */,
+				8A75E936197EF97E0007FCA7 /* symbol.c in Sources */,
+				8A75E937197EF97E0007FCA7 /* symtab.c in Sources */,
+				8A75E92A197EF97E0007FCA7 /* dangu.c in Sources */,
+				8A75E935197EF97E0007FCA7 /* segment.c in Sources */,
+				8A75E8F2197EEE6A0007FCA7 /* konsole.c in Sources */,
+				8A75E933197EF97E0007FCA7 /* pmap.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A75E8F3197EEE6A0007FCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		8A75E8F4197EEE6A0007FCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		8A75E8F6197EEE6A0007FCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		8A75E8F7197EEE6A0007FCA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A75E8E0197EEE6A0007FCA7 /* Build configuration list for PBXProject "konsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A75E8F3197EEE6A0007FCA7 /* Debug */,
+				8A75E8F4197EEE6A0007FCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A75E8F5197EEE6A0007FCA7 /* Build configuration list for PBXNativeTarget "konsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A75E8F6197EEE6A0007FCA7 /* Debug */,
+				8A75E8F7197EEE6A0007FCA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A75E8DD197EEE6A0007FCA7 /* Project object */;
+}
